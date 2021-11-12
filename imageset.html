@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #d1{
+            height:200px;
+            width:210px;
+            background: blueviolet;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        #r1{
+            height:400px;
+            width: 400px;
+            border: 4px dashed white;
+            margin:100px;
+        }
+    </style>
+    <script>
+        function add(obj)
+        {
+           document.getElementById("r1").style.backgroundImage="url("+obj.src+")";
+           document.getElementById("r1").style.backgroundSize="400px 400px";
+           document.getElementById("r1").style.backgroundImage=pr;
+        }
+        function show(){
+            document.getElementById("r1").style.backgroundImage=null;
+         
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <img src="../images/izmo1.jpg" onmouseover="add(this)" onmouseout="show()">
+        <img src="../images/izmo2.jpg" onmouseover="add(this)"  onmouseout="show()">
+        <img src="../images/izmo3.jpg" onmouseover="add(this)"  onmouseout="show()">
+        <img src="../images/red.png" onmouseover="add(this)"  onmouseout="show()">
+    </div>
+    <div id="r1"></div>
+</body>
+</html>

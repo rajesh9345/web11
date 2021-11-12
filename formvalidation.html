@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+    <script>
+        function add() {
+            var a = document.getElementById("f1").value;
+            if (a == null || a == "") 
+            {
+                alert("plz enter the name")
+                return false;
+            }
+            else {
+                for (var i = 0; i < a.length; i++) 
+                {
+                    if (a[i] >= 0 && a[i] <= 9) 
+                    {
+                        alert("pleas enter only alpha");
+                        return false;
+                    }
+                }
+            }
+            var bc=document.getElementById("adr").value;
+            if (bc == " " || bc==null) 
+            {
+                alert("please enter address button");
+                return false;
+            }
+
+
+         var p1 = document.getElementById("p1").value;
+            if (p1 == null || p1 == " ") 
+            {
+                alert("plz enter the number")
+            }
+            else {
+                for (var i = 0; i < p1.length; i++) 
+                {
+                    if (a[i] >= 97 || a[i] <= 122)
+                    {
+                        alert("pleas enter only number");
+                        return false;
+                    }
+                }
+            }
+}
+    </script>
+</head>
+
+<body>
+    <form  align="center">
+        <label>Name::
+            <input type="text" id="f1" required placeholder="name">
+        </label><br>
+        <label>address:<textarea rows="10" cols="10"  id="adr"> </textarea></label><br>
+        <label>phone
+            <input type="text" id="p1" required>
+            </labe><br>
+            <label>timmings</label><br>
+            <label>morning
+                <input type="radio" id="r1" name="aa1"></label><br>
+            <label>evening
+                <input type="radio" id="r1" name="aa1"><br><br>
+                <label>choose your id code</label><br>
+                <label>pan card
+                    <input type="checkbox" id="b1" name="c1"></label><br>
+                <label>aadhar card
+                    <input type="checkbox" id="b2" name="c1"></label><br>
+
+                <select name="course">
+                    <option value="o1" >java</option>
+                    <option value="o2">sql</option>
+                    <option value="o3">j2ee</option>
+                    <option value="o4">html</option>
+                </select><br><br><br>
+    </form>
+    <input type="submit" onclick=" return add()">
+</body>
+
+</html>

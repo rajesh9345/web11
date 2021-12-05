@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <script>
+        var start=1;
+        
+        function set_time(){
+           setInterval(img_show,3000);
+        }
+        function img_show(){
+            var img;
+            if(start==1){
+                img="pratice1.jpeg";
+            }
+            else if(start==2){
+                img="pratice2.jpg";
+            }
+            // else if(start==3){
+            //     img="pratice3.jpg";
+            // }
+            else if(start==3){
+                img="pratice4.jpg";
+            }
+           else{
+               start=1;
+           }
+           document.getElementById("one").src=""+img;
+           start++;
+        }
+    </script>
+</head>
+<body onload=set_time()>
+    <div class="menu" >
+        <ul>
+            <li class="a"><a href="#">model</a>
+            <div class="sub-menu">
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+            </div>
+            </li>
+            <li ><a href="#">price</a></li>
+            <li ><a href="#">color</a></li>
+            <li ><a href="#">engine</a></li>
+            <li ><a href="#">company</a></li>
+        </ul>
+    </div>
+    <div class="images">
+        <img src="pratice1.jpeg" height="600" width="1600" id="one">
+    </div>
+</body>
+</html>

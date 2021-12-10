@@ -1,0 +1,42 @@
+body{background-color: black;}
+        .a1{
+            background-color: black;
+            color: turquoise;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: 40px;
+            border: 2px rgb(192, 146, 60) dotted;
+        }
+        .a1 h3{text-align: center;}
+        .first{
+           background-color: white;
+            float: left;
+            width: 30%;
+            margin-left: 50px;
+            margin-top: 70px;
+            border: 2px rgb(219, 217, 212) solid;
+        }
+        .second{
+           background-color: white;
+            float: left;
+            width: 30%;
+            margin-left: 50px;
+            margin-top: 70px;
+            border: 2px rgb(219, 217, 212) solid;
+        }
+        .third{
+           background-color: white;
+            float: left;
+            width: 30%;
+            margin-left: 50px;
+            margin-top: 70px;
+            border: 2px rgb(219, 217, 212) solid;
+        }
+        .a2{background-color: rgb(246, 246, 12);
+            rotate: kanna;
+         color:black;
+         margin-left: 250px;
+         margin-right: 20px;
+         height: 50px;
+        }
+        .a2 h2{text-align: center;font-size: x-large;margin-top: 20px;}
